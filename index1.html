@@ -32,7 +32,7 @@
  </header>
  <div id="container">
      <h3>Mouse Events</h3>
-     <button id="btn1">Button 1</button>
+     <button id="btn1" class="btnClass">Button 1</button>
      <button id="btn2">Button 2</button>
      <p class="para1">blah blah blah blah blah</p>
  </div>
@@ -84,12 +84,16 @@
        */
 
        $('#btn1').click(function(e){
-         alert(e.currenttarget.id);
-         alert(e.currenttarget.innerHTML);
-         alert(e.currenttarget.outerHTML);
+         //alert(e.currenttarget.id);
+         //alert(e.currenttarget.innerHTML);
+         //alert(e.currenttarget.outerHTML);
+         //alert(e.currenttarget.className);
         
 
        });
+
+       $('#btn1').on('mousemove', function (e){
+           console.log
     });
 
 </script>
