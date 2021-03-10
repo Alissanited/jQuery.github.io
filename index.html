@@ -28,12 +28,32 @@
 <body>
  <header>
  <h1>jQuery Crash Course</h1>
+
  </header>
  <div id="container">
-   <h1 id="heading1">Heading One</h1>
- </div>
-  <script>
+   <h1 class="heading2">Heading Two</h1>
+   <p class="para2">blah blah blah blah blah balh balah blah. <span> blah blah blah</span>blah blah blah blah blah blah</p>
 
+   <h1 id="heading1">Heading One</h1>
+   <p id="para1">blah blah blah blah blah balh balah blah. <span> blah blah blah</span>blah blah blah blah blah blah</p>
+ 
+ <ul id="list">
+     <li>List Item</li>
+     <li>List Item</li>
+     <li>List Item</li>
+     <li>List Item</li>
+     <li>List Item</li>
+ </ul>
+</div>
+
+  <script>
+    //$('h1').hide();
+    //$('h1#heading1').hide();
+    //$('.heading2').hide();
+
+    //$('p span').css().css('color', 'red');
+    $('ul#list li:first').css('color', 'red');
+    $('ul#list li:last').css('color', 'green');
   </script>
 </body>
 </html>
